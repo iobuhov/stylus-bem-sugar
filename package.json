@@ -1,6 +1,6 @@
 {
   "name": "stylus-bem-sugar",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Collection of stylus mixins that help write code in BEM notation",
   "repository": {
     "type": "git",
