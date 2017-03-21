@@ -1,0 +1,20 @@
+{
+  "name": "stylus-bem-sugar",
+  "version": "1.0.0",
+  "description": "Collection of stylus mixins that help write code in BEM notation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "stylus",
+    "bem",
+    "mixin",
+    "mixins",
+    "block",
+    "element",
+    "modifiet"
+  ],
+  "author": "iobuhov",
+  "license": "MIT"
+}
