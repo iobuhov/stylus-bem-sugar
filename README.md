@@ -47,7 +47,7 @@ stylusBemSugar(options);
 
 To use mixins import them in your stylus file:
 ```stylus
-@import 'bem-shugar'
+@import 'bem-sugar'
 ```
 
 ### Examples
