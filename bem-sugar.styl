@@ -24,7 +24,6 @@ group()
   unless caller in ('b' 'e' 'm')
     error('Error: invalid call, e must be called from "e", "m" or "b" mixins')
   level = length(called-from) + 1
-  p(group-store[level], level)
   elements = group-store[level]
   selector = ()
   parent = null
