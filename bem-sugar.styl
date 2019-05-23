@@ -21,8 +21,6 @@ b(name)
 
 group()
   caller = called-from[0]
-  unless caller in ('b' 'e' 'm')
-    error('Error: invalid call, e must be called from "e", "m" or "b" mixins')
   level = length(called-from) + 1
   elements = group-store[level]
   selector = ()
@@ -36,9 +34,6 @@ m(mod, val=null)
   mod    = m-prefix + mod
   mod    = val ? mod + val : mod
   caller = called-from[0]
-
-  unless caller in ('e' 'b' 'group')
-    error('Error: invalid call, m must be called from "e" or "b" mixins')
   if caller in ('group')
     level = length(called-from)
     mod = str('&', mod)
@@ -53,9 +48,6 @@ e(element)
   element = e-prefix + element
   caller  = called-from[0]
   gcaller = called-from[1]
-
-  unless caller in ('b' 'e' 'm' 'group')
-    error('Error: invalid call, e must be called from "e", "m", "group"  or "b" mixins')
   if caller in ('group')
     level = length(called-from)
     if gcaller in ('e' 'm')
